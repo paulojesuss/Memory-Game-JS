@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+body {
+    background-color: rgb(31, 179, 66);
+    color: white;
+    text-align: center;
+    background-image: url("../img/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    padding: 20px;
+}
+
+#titulo {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.jogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(24, 20, 20, 0.8);
+    border-radius: 15px;
+    
+}
+
+.carta {
+    width: 100px;
+    height: 140px;
+    position: relative;
+    
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.frente {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.atras {
+    background-color: black;
+}
+
+.carta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carta.virada .frente {
+    transform: rotateY(0deg);
+}
+
+.carta.virada .atras {
+    transform: rotateY(180deg);
+}
+
+.frente, .atras {
+    transition: transform 0.6s;
+}
+
+.botao{
+    margin-top: 20px;
+    height: 35px;
+    width: 110px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.botao:hover{
+    background-color: rgb(193, 255, 208);
+}
+
+.invisivel{
+    visibility: hidden;
+}
+
+.tempo{
+    font-size: 29px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.jogador{
+    font-size: 29px;
+    margin-bottom: 20px;
+    color: white;
+}
