@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Pixelify Sans", sans-serif;
+}
+body {
+    background-color: rgb(31, 179, 66);
+    color: white;
+    text-align: center;
+    background-image: url("../img/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;        
+    height: 800px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.logo{
+    height: 180px;
+    width: 180px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+#nome{
+    height: 40px;
+    border-radius: 8px;
+    width: 280px;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.botao{
+    
+    height: 35px;
+    width: 110px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#btnEntrar:hover{
+    background-color: rgb(193, 255, 208);
+    
+}
+
+#nome::placeholder {
+    color: gray;
+    font-style: italic;
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#btnEntrar{
+    margin-top: 30px;
+}
+
+#btnSobre{
+    margin-top: 15px;
+}
+
+#btnSobre:hover{
+    background-color: rgb(193, 255, 208);
+    cursor: pointer;
+}

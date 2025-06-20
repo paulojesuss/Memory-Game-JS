@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+body {
+    background-color: rgb(31, 179, 66);
+    color: white;
+    text-align: center;
+    background-image: url("../img/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;        
+    height: 800px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.ranking{
+    width: 420px;
+    height: 55%;
+
+    color: black
+}
+
+.rank{
+    width: 420px;
+    height: 79px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.imagem{
+    width: 20%;
+    height: 100%;
+}
+
+.jogador{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 80%;
+    height: 110%;
+}
+
+.tempo{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#btnVoltar{
+    margin-top: 20px;
+    height: 35px;
+    width: 110px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#btnVoltar:hover{
+    background-color: rgb(193, 255, 208);
+}
